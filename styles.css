@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor_logo_k {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.contenedor_logo_k img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedor_inicio {
+    background-image: url(./images/studio_2.jpg);
+    background-size: cover;
+}
+
+.contenedor_logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    place-items: center;
+    column-gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+@media (hover: hover) {
+    .contenedor_grid .transition img:hover {
+        animation-name: pulse;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.contenedor_btn_logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn_logo {
+	padding: 0.5rem 2rem;
+	background-color: #000033;
+	border: 1px solid #0c7402;
+	border-radius: 5px;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+
+@media (hover: hover) {
+    .btn_logo:hover {
+        background-color: transparent;
+        border: 1px solid #0c7402;
+    }
+}
+
+.redes_sociales {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_inicio {
+    padding: .3rem 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+}
+   
