@@ -1,84 +1,223 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<html><head><base href="https://wilmerdelgadocieza.blogspot.com/"> 
 
+
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="theme-color"content="#87a938">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Radios HD Streaming. ">
-    <meta name="keywords" content="Djs, Publicidad, Radio, servicios, Peru, Noticias, Dicoteca, Salsa, Eventos, Comercio, Audio, Tropical;n, Oyentes, Musica, Ventas, Alegria , fm, Locutores, La Mas Buena, Regueton , 24 Horas.">
-    <link rel="shortcut icon" href="./Favicon.png">
-	<meta property="og:image" content="./Facebook.jpg" />
-	<meta property="og:image:secure_url" content="./Facebook.jpg" />
-	<meta property="og:url" content="https://www.radioshdstreaming.com" />
-	<meta property="og:site_name" content="radioshdstreaming" />
-	<meta property="og:title" content="radios HD | Bienvenido" />
-    <title>DJ WILMER EN VIVO | Bienvenidos</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>DJ WILMER EN VIVO</title>
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --dark: #000000;
+            --light: #ffffff;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: var(--dark);
+            color: var(--light);
+        }
+
+        .header {
+            background: var(--primary-red);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .player-container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .player-box {
+            background: var(--primary-red);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .play-btn {
+            background: var(--dark);
+            color: var(--light);
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+
+        .play-btn:hover {
+            background: #333;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-btn {
+            background: var(--primary-red);
+            color: var(--light);
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .now-playing {
+            background: rgba(255,0,0,0.8);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .chat-container {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .volume-control {
+            margin: 20px 0;
+        }
+
+        .volume-control input {
+            width: 200px;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .live-indicator {
+            color: var(--primary-red);
+            animation: pulse 2s infinite;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--primary-red);
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .player-container {
+                padding: 10px;
+            }
+            
+            .logo {
+                max-width: 200px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <main class="contenedor_inicio">
+    <header class="header">
+        <img src="https://i.ibb.co/mhw9LGh/DJ-WILMER-PNG-ORIGINAL.png" 
+             alt="En vivo desde camporredondo Luya Amazonas "
+             class="logo"
+             width="300"
+             height="100">
+    </header>
 
-        <figure class="contenedor_logo_k">
-            <img src="./images/alaire.gif" alt="" width="80" height="36">
-        </figure>
-
-        <section class="contenedor_logos">
-
-            <div class="contenedor_grid">
-                <a class="transition" href="#">
-                    <img src="./images/logo.png" alt="" width="482" height="441">
-                </a>
-
-                <div align="center"><div class="btn_logo">
-                    <button onclick="secondExample()">
-                    Canciones Recientes </button>
-                    <script>
-                        // Esta función abre una ventana con tu propio contenido
-                        function firstExample() {
-                          var newWindow = window.open('', '', 'width=250, height=120');
-                          newWindow.document.write('<p>Hello World!</p>');
-                        }
-                        
-                        // Abre una página diferente
-                        function secondExample() {
-                          window.open('./track.html', 'Twitter', 'width=915, height=590');
-                        }
-                      </script>
-                </div>
-                <div class="row justify-content-center">
-                  <embed src="./player/hd/index.html" width="100%"></embed>
-                  <div class="redes_sociales">
-                    <a href=" https://web.facebook.com/DJCHOCHOBARWILMER/" target="_blank">
-                        <img src="./images/facebook.png" alt="">
-                    </a>
-                    <a href=" https://wa.link/33qul8" target="_blank">
-                        <img src="./images/whatsapp.png"" alt="">
-                    </a>
-                    <a href=" https://www.youtube.com/channel/UCmJFc5f20PHmTwvvX5sONGQ" target="_blank">
-                        <img src="./images/youtube.png" alt="">
-                    </a>
-                    <a href=" https://wilmerdelgadocieza.blogspot.com/" target="_blank">
-                        <img src="./images/x.png" alt="">
-                    </a>
-					 <a href=" https://www.instagram.com/wilmerdelgadocieza/" target="_blank">
-                        <img src="./images/instagram.png" alt="">
-                    </a>
-                </div>
+    <main class="player-container">
+        <div class="player-box">
+            <h2>ESCÚCHANOS EN VIVO</h2>
+            <div class="now-playing">
+                <span class="live-indicator">● EN VIVO</span>
+                <div id="currentSong">DJ WILMER</div>
             </div>
 
-            
+            <button class="play-btn" id="playBtn">
+                <i class="fas fa-play"></i> REPRODUCIR RADIO
+            </button>
 
-      </section>
-    </main>
-    
-    <footer class="footer_inicio">
-        <div>
-            <p>DJ WILMER EN VIVO Camporredondo Luya Amazonas peru </p>
+            <div class="volume-control">
+                <input type="range" id="volume" min="0" max="100" value="80">
+            </div>
         </div>
-    </footer>
-</body>
 
+        <div class="social-links">
+            <a href="https://web.facebook.com/DJCHOCHOBARWILMER/" class="social-btn" target="_blank">
+                Facebook
+            </a>
+            <a href=" https://www.youtube.com/channel/UCmJFc5f20PHmTwvvX5sONGQ" class="social-btn" target="_blank">
+                YouTube
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=51984335569" class="social-btn" target="_blank">
+                WhatsApp
+            </a>
+        </div>
+
+        <div class="chat-container">
+            <h3>SITIO WEB OFICIAL</h3>
+            <iframe src="https://wilmerdelgadocieza.blogspot.com/" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Radio Dj Wilmer - La Mejor Musica Variado</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const playBtn = document.getElementById('playBtn');
+            const volumeControl = document.getElementById('volume');
+            const audio = new Audio(' https://stream.zeno.fm/wttrxavefwzuv');
+            let isPlaying = false;
+
+            playBtn.addEventListener('click', () => {
+                if(isPlaying) {
+                    audio.pause();
+                    playBtn.innerHTML = '<i class="fas fa-play"></i> REPRODUCIR RADIO';
+                    isPlaying = false;
+                } else {
+                    audio.play();
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i> PAUSAR RADIO';
+                    isPlaying = true;
+                }
+            });
+
+            volumeControl.addEventListener('input', (e) => {
+                audio.volume = e.target.value / 100;
+            });
+
+            // Simple now playing updater
+            function updateNowPlaying() {
+                fetch('https://wilmerdelgadocieza.blogspot.com/api/now-playing')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('currentSong').textContent = data.song;
+                    })
+                    .catch(err => console.log('Error fetching now playing info'));
+            }
+
+            setInterval(updateNowPlaying, 10000);
+        });
+    </script>
+</body>
 </html>
+https://wilmerdelgadocieza.blogspot.com/
+
